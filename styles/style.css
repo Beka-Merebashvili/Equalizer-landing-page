@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif ;
+}
+
+ /* styles for mobile */
+
+body {
+    background-image: url(../starter-code/assets/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-position: top -160px left 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pattern-2 {
+    display: none;
+    width: 266px;
+    height: 400px;
+}
+.logo {
+    margin: 40px 180px 64px 0;
+}
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.454545px;
+    color: #191826;
+    width: 326px;
+    margin-bottom: 20px;
+}
+.description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #191826;
+    width: 326px;
+    margin-bottom: 166px
+}
+.main-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.mobile {
+    width: 208px;
+    height: 430px;
+    position: absolute;
+    top: -98px;
+}
+.mobile img {
+    width: 100%;
+}
+.pattern {
+    width: 375px;
+     height: 600px;
+    background: #191826;
+    background-image: url(../starter-code/assets/bg-pattern-2.svg);
+    background-repeat: no-repeat;
+    background-position: top 0 left 48px;
+    border-radius: 12px;
+}
+.premium {
+     width: 375px;
+     height: 546px;
+    background: #FA7453;
+    border-radius: 12px;
+    position: absolute;
+    top: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2 {
+    color: #FCFAF9;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    width: 302px;
+    margin: 48px 0 12px 0;
+}
+.premium-text {
+    color: #FCFAF9;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    width: 302px;
+}
+.price {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 36px 140px 32px 0;
+}
+.price p {
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 52px;
+    color: #FCFAF9;
+}
+span {
+    font-size: 20px;
+    letter-spacing: -0.2px;
+    color: #FCFAF9;
+    opacity: 0.9;
+}
+button {
+    width: 296px;
+    height: 60px;
+    border-radius: 12px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button img {
+    margin-right: 8px;
+}
+.ios {
+   background: #191826;
+   color: #FCFAF9;
+   text-align: center;
+   margin-bottom: 16px;
+}
+.android {
+    background: #FCFAF9;
+    color: #191826;
+}
+.footer {
+    margin-top: 460px;
+}
+.footer-wraper {
+    width: 100%;
+}
+.rights {
+    color: #191826;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 326px;
+    margin: 32px 0 64px 0;
+}
+.rights span {
+    color: #191826;
+    font-size: 16px;
+    font-weight: bold;
+}
+.media-icons {
+    margin-bottom: 80px;
+}
+.media-icons img {
+    margin-right: 20px;
+}
+
+
+/* styles for tablet */
+
+@media only screen and (min-width: 768px) {
+    body {
+        position: relative;
+        align-items: center;
+        padding-left: 34px;
+        background-image: url(../starter-code/assets/bg-main-tablet.png);
+        background-position: bottom 800px left -300px;
+    }
+    .pattern-2 {
+        display: block;
+        position: absolute;
+        top: -32px;
+        right: -32px;
+    }
+    .pattern-2 img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .logo {
+        margin: 62px 525px 95px 0;
+    }
+    .main-heading {
+       margin: 0 150px 0 0;
+    }
+    h1 {
+        font-size: 64px;
+        line-height: 64px;
+        letter-spacing: -0.727273px;
+        width: 520px;
+    }
+    .description {
+        width: 514px;
+        margin-bottom: 250px;
+    }
+    .pattern {
+        width: 696px;
+        height: 600px;
+        margin-bottom: 182px;
+        background-position: top -60px right 178px;
+    }
+    .mobile {
+        width: 270px;
+        height: 556px;
+        top: -138px;
+        left: 64px;
+    }
+    .premium {
+        width: 400px;
+        height: 546px;
+        top: 150px;
+        right: 58px;
+    }
+    .rights {
+        width: 366px;
+    }
+    .footer {
+        margin-top: 6px;
+    }
+    .footer-wraper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .media-icons {
+        margin-left: 220px;
+    }
+    .media-icons img {
+        margin-top: 40px;
+      }
+
+} 
+
+/* styles for desktop */
+
+@media only screen and (min-width: 1440px) {
+    body {
+        background-image: url(../starter-code/assets/bg-main-desktop.png);
+        background-position: top -180px left -300px;
+    }
+    .pattern-2 {
+    width: 312px;
+    height: 468px;
+  }
+  .logo {
+    margin-right: 1000px;
+  }
+  h1 {
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -1px;
+    width: 1015px;
+  }
+  .description {
+    font-size: 20px;
+    line-height: 34px;
+    width: 825px;
+    margin-bottom: 320px;
+  }
+  .mobile {
+    width: 312px;
+    height: 642px;
+    top: -212px;
+    left: 102px;
+  }
+  .pattern {
+    width: 1100px;
+    height: 600px;
+    background-position: top -40px left 336px;
+  }
+  .premium {
+    width: 446px;
+    height: 625px;
+    top: 90px;
+    right: 95px;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 220px;
+  }
+  .logo2 {
+    margin-top: 28px;
+  }
+  .ios:hover {
+    background: #66E2DC;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .android:hover {
+    background: #FFB964;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .media-icons img {
+    margin-top: 54px;
+  }
+  .media-icons :hover {
+    filter: invert(62%) sepia(99%) saturate(3062%) hue-rotate(330deg) brightness(109%) contrast(96%);
+    transition: 0.4s;
+    cursor: pointer;
+  }
+}
